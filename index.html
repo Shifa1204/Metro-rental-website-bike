@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Metro Rental Bikes — Ride Your Freedom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Metro Rental Bike logo" class="logo">
+        <div class="brand-text">
+          <div class="company">Metro Rental Bikes</div>
+          <div class="tagline">Your Journey Begins Here</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#bikes">Our Bikes</a>
+        <a href="#why">Why Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#safety">Safety</a>
+        <a href="#how">How to Rent</a>
+        <a href="#contact">Contact</a>
+        <button class="btn-primary" id="rentNowBtn">Rent Now</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Ride the City in Style</h1>
+          <p class="lead">Premium motorbikes & scooty rentals — clean bikes, clear pricing, effortless booking. Starting at <strong>₹700/day</strong>.</p>
+          <div class="hero-ctas">
+            <a class="btn-primary" href="#contact">Book Now</a>
+            <a class="btn-ghost" href="#bikes">View Fleet</a>
+          </div>
+
+          <ul class="hero-features">
+            <li>Free helmet with every rental</li>
+            <li>Regularly serviced & sanitized bikes</li>
+            <li>Pickup / drop within the city</li>
+          </ul>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/hero-bike.jpg" alt="motorbike on road">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Metro Rental Bikes</h2>
+        <p class="intro">Metro Rental Bikes provides convenient two-wheeler rentals for city commuters, tourists, and weekend riders. Our promise: clean, reliable bikes, transparent pricing and friendly service.</p>
+        <div class="about-grid">
+          <div>
+            <h3>Our Mission</h3>
+            <p>To make urban travel simple and joyful — one ride at a time. We focus on safety, maintenance and easy bookings.</p>
+          </div>
+          <div>
+            <h3>What We Offer</h3>
+            <p>Short-term rentals (daily), helmets, optional insurance, and optional delivery & pickup in selected zones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIKES -->
+    <section id="bikes" class="section dark-section">
+  <div class="container">
+    <h2>Our Fleet — Two-Wheelers Only</h2>
+    <p class="muted">Premium motorbikes and scooters crafted for your perfect ride — commuter, cruiser or sporty.</p>
+
+    <div class="fleet-grid">
+      <article class="fleet-card">
+        <img src="/images/yamaha.jpg" alt="Yamaha FZ">
+        <h4>Yamaha FZ</h4>
+        <p class="small">Sporty handling and modern design — perfect for quick city rides.</p>
+        <div class="card-foot">
+          <div class="price">₹700/day</div>
+          <button class="btn-primary" onclick="prefill('Yamaha FZ')">Book Now</button>
+        </div>
+      </article>
+
+      <article class="fleet-card">
+        <img src="/images/reclassic.jpg" alt="Royal Enfield Classic">
+        <h4>Royal Enfield Classic 350</h4>
+        <p class="small">Comfortable cruiser for long weekend getaways. Ride with style and confidence.</p>
+        <div class="card-foot">
+          <div class="price">₹700/day</div>
+          <button class="btn-primary" onclick="prefill('Royal Enfield Classic 350')">Book Now</button>
+        </div>
+      </article>
+
+      <article class="fleet-card">
+        <img src="/images/activa.jpg" alt="Honda Activa">
+        <h4>Honda Activa</h4>
+        <p class="small">Easy-to-ride scooty for urban travel — smooth, reliable, and efficient.</p>
+        <div class="card-foot">
+          <div class="price">₹700/day</div>
+          <button class="btn-primary" onclick="prefill('Honda Activa')">Book Now</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <!-- WHY US -->
+    <section id="why" class="section">
+      <div class="container">
+        <h2>Why Choose Metro</h2>
+        <div class="reasons-grid">
+          <div class="reason">
+            <h4>Simple Booking</h4>
+            <p>Call/WhatsApp <strong>8122872470</strong> or use the form — we confirm availability fast.</p>
+          </div>
+          <div class="reason">
+            <h4>Transparent Pricing</h4>
+            <p>Flat ₹700/day with helmet included. Add-ons listed on booking.</p>
+          </div>
+          <div class="reason">
+            <h4>Trusted Fleet</h4>
+            <p>All bikes undergo regular maintenance and safety checks.</p>
+          </div>
+          <div class="reason">
+            <h4>Support</h4>
+            <p>24/7 support for premium plans and roadside assistance options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery-section">
+  <div class="container">
+    <h2 class="section-title">Our Stunning Rides</h2>
+    <p class="section-subtitle">Choose from our premium two-wheelers — perfect for your next adventure.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/bike1.jpg" alt="Bike">
+        <div class="overlay">Yamaha MT-15</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/bike2.jpg" alt="Bike">
+        <div class="overlay">Royal Enfield Classic 350</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/scooty1.jpg" alt="Scooter">
+        <div class="overlay">Honda Activa 6G</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/bike3.jpg" alt="Adventure Bike">
+        <div class="overlay">KTM Duke 200</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SAFETY -->
+    <section id="safety" class="section">
+      <div class="container">
+        <h2>Safety Measures</h2>
+        <ul class="safety-list">
+          <li>Helmets provided and encouraged for every rider.</li>
+          <li>Pre-ride inspection of brakes, lights, and tires.</li>
+          <li>Sanitization after each rental.</li>
+          <li>Optional insurance on request.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOW TO RENT -->
+    <section id="how" class="section dark-section">
+      <div class="container">
+        <h2>How to Rent — Quick Steps</h2>
+        <ol class="steps">
+          <li><strong>Call / WhatsApp:</strong> 8122872470 or message us on Instagram @metro_rental_bikes.</li>
+          <li><strong>Select Bike:</strong> Tell us model & preferred date.</li>
+          <li><strong>Send Details:</strong> Name, address, mobile & WhatsApp number (use form below).</li>
+          <li><strong>Confirm:</strong> We confirm availability and pickup time; pay on pickup or online if configured.</li>
+          <li><strong>Pickup:</strong> ID & brief bike orientation; helmet given.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact & Quick Enquiry</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Call / WhatsApp: <strong>8122872470</strong></p>
+            <p>Instagram: <strong>@metro_rental_bikes</strong></p>
+            <p>Email: <strong>metrorentalbike@gmail.com</strong></p>
+            <p>Address: Coimbatoure</p>
+          </div>
+
+          <form id="messageForm" class="contact-form">
+            <label>Full name</label>
+            <input name="name" required placeholder="Your full name">
+
+            <label>Address</label>
+            <input name="address" required placeholder="Pickup address">
+
+            <label>Mobile number</label>
+            <input name="mobile" required placeholder="Mobile number">
+
+            <label>WhatsApp number (if different)</label>
+            <input name="whatsapp" placeholder="WhatsApp number">
+
+            <label>Message</label>
+            <textarea name="message" rows="3" placeholder="Which bike & preferred date"></textarea>
+
+            <div class="form-row">
+              <button type="submit" class="btn-primary">Send Enquiry</button>
+              <div id="formStatus" class="form-status"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span id="year"></span> Metro Rental Bikes — Ride Your Freedom</div>
+      <div>Follow: @metro_rental_bikes</div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>document.getElementById('year').innerText = new Date().getFullYear();</script>
+</body>
+</html>
